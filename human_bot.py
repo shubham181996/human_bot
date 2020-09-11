@@ -1,7 +1,7 @@
 import pyttsx3 
 import os
 
-#pyttsx3.speak("Hello Shubham, I am AI bot, what kind of help you")
+#pyttsx3.speak("Hello Shubham, I am AI bot, How can I help you")
 
 while True:
 
@@ -9,13 +9,13 @@ while True:
  p = input()
  #print(p)
 
- if (("run" in p) or ("execute" in p) and ("notepad" in p) or ("editor" in p)):
+ if (("run" in p) or ("execute" in p)) and (("notepad" in p) or ("editor" in p)):
   os.system("notepad")
  
- elif (("run" in p) or ("execute" in p) and ("video player" in p) or ("watch" in p)):
+ elif (("run" in p) or ("execute" in p)) and (("video player" in p) or ("watch" in p)):
   os.system("wmplayer")
  
- elif (("run" in p) or ("execute" in p) and ("internet" in p) or ("browser" in p)):
+ elif (("run" in p) or ("execute" in p)) and (("internet" in p) or ("browser" in p)):
   os.system("chrome")
  
  elif ("exit" in p) or ("quit" in p):
